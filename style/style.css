@@ -1,0 +1,18 @@
+/*@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap&subset=cyrillic');
+* {font-family: 'Rubik', sans-serif; margin: 0; padding: 0;}*/
+* {font-family: 'Arial', sans-serif; margin: 0; padding: 0;
+    /* запрет на выделение и подсветку кликов : */ user-select: none; outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+}
+
+body{display: flex; flex-wrap: wrap; align-content: center; justify-content: center; background-image: url('../src/img/page-bg.jpg'); background-color: black;}
+
+#canvas {border: 2px solid rgb(255, 255, 255); cursor: none;}
+
+@media (max-width: 1200px){
+    #canvas {width:600px; height: 300px;}
+}
+@media (max-width: 600px){
+    #canvas {width:300px; height: 150px;}
+}
